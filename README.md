@@ -134,7 +134,7 @@ EGGTIME.MPF
 
 The file lists, in this order:
 - the name of the machine
-- the analog threshold for the CANCEL buttons (using during YES/NO dialogues) 
+- the analog threshold for the CANCEL buttons (used during YES/NO dialogues) 
 - the 2nd analog threshold for the CANCEL buttons (toplevel buttons)
 - the analog threshold for the OK button
 - the analog threshold for the NEXT/PREV button
