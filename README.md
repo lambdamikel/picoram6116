@@ -15,18 +15,21 @@ logs](https://hackaday.io/project/194092-picoram-6116-sram-emulator-sd-card-inte
 are on [Hackaday.](https://hackaday.com).
 
 This project is a follow-up to [PicoRAM 2090 for the Busch Microtronic
-Computer System.](https://github.com/lambdamikel/picoram2090); also
+Computer System](https://github.com/lambdamikel/picoram2090); also
 see the [development logs on
 Hackaday.](https://hackaday.io/project/192655-picoram-2090)
+
+### PicoRAM 6116 with the MPF-1B
 
 ![PicoRAM 6116 MPF-1B a](pics/6116-mpf-1b-a.jpg)
 
 ![PicoRAM 6116 MPF-1B b](pics/6116-mpf-1b-b.jpg)
 
+### PicoRAM 6116 with the MPF-1P (IP / One Plus)
+
 ![PicoRAM 6116 MPF-1P a](pics/6116-mpf-1p-a.jpg)
 
 ![PicoRAM 6116 MPF-1P b](pics/6116-mpf-1p-b.jpg)
-
 
 ## Latest News
 
