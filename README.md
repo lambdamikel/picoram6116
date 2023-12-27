@@ -40,7 +40,7 @@ Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
 ![Hackster](pics/hackster-6116.jpg)
 
-I also archived [the PDF of the Hackster article.](pics/hackster-6116.pdf)
+I also archived [the PDF of the Hackster article.](pics/hackster-article.pdf)
 
 
 ## About
