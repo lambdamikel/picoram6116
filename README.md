@@ -208,7 +208,7 @@ Soon.
 ## Acknowledgements
 
 - Harry Fairhead for his [execellent
-  book](https://www.amazon.com/gp/product/1871962056)
+  book!](https://www.amazon.com/gp/product/1871962056)
 
 - Hans Hübner (aka Pengo) for motivating me to abandon the BluePill,
 ATmegas and Arduinos, and for helping to get started and
