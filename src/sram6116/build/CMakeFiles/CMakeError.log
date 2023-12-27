@@ -1,0 +1,912 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-gj18zu
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_2abef && [1/2] Building C object CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccgX2Kds.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccgX2Kds.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_2abef.exe
+FAILED: cmTC_2abef.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj -o cmTC_2abef.exe -Wl,--out-implib,libcmTC_2abef.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2abef.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccQPxi7w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_2abef.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_2abef.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2abef.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-sq4n9e
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_2f7bd && [1/2] Building C object CMakeFiles/cmTC_2f7bd.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_2f7bd.exe
+FAILED: cmTC_2f7bd.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_2f7bd.dir/testCCompiler.c.obj -o cmTC_2f7bd.exe -Wl,--out-implib,libcmTC_2f7bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-gvs7na
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_375c7 && [1/2] Building C object CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccSECdQ7.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccSECdQ7.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_375c7.exe
+FAILED: cmTC_375c7.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj -o cmTC_375c7.exe -Wl,--out-implib,libcmTC_375c7.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_375c7.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\cc2jOqEd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_375c7.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_375c7.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_375c7.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-6zhobu
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_d28b6 && [1/2] Building C object CMakeFiles/cmTC_d28b6.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_d28b6.exe
+FAILED: cmTC_d28b6.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_d28b6.dir/testCCompiler.c.obj -o cmTC_d28b6.exe -Wl,--out-implib,libcmTC_d28b6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-ik7g8p
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_2341d && [1/2] Building C object CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccb18iAj.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccb18iAj.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_2341d.exe
+FAILED: cmTC_2341d.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj -o cmTC_2341d.exe -Wl,--out-implib,libcmTC_2341d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2341d.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\cc9b6rJp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_2341d.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_2341d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2341d.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-620um1
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_6e85b && [1/2] Building C object CMakeFiles/cmTC_6e85b.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_6e85b.exe
+FAILED: cmTC_6e85b.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_6e85b.dir/testCCompiler.c.obj -o cmTC_6e85b.exe -Wl,--out-implib,libcmTC_6e85b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-m0w318
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_c1154 && [1/2] Building C object CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\cc0aeLeD.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\cc0aeLeD.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_c1154.exe
+FAILED: cmTC_c1154.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj -o cmTC_c1154.exe -Wl,--out-implib,libcmTC_c1154.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1154.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\cc2teQCI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_c1154.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_c1154.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_c1154.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-q6cbma
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_fbb88 && [1/2] Building C object CMakeFiles/cmTC_fbb88.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_fbb88.exe
+FAILED: cmTC_fbb88.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_fbb88.dir/testCCompiler.c.obj -o cmTC_fbb88.exe -Wl,--out-implib,libcmTC_fbb88.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-rhqmx0
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_915c3 && [1/2] Building C object CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccTIpsJA.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccTIpsJA.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_915c3.exe
+FAILED: cmTC_915c3.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj -o cmTC_915c3.exe -Wl,--out-implib,libcmTC_915c3.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_915c3.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccTUIX6F.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_915c3.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_915c3.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_915c3.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-low72z
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_708fa && [1/2] Building C object CMakeFiles/cmTC_708fa.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_708fa.exe
+FAILED: cmTC_708fa.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_708fa.dir/testCCompiler.c.obj -o cmTC_708fa.exe -Wl,--out-implib,libcmTC_708fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-d10tqz
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_27254 && [1/2] Building C object CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccY7WyPi.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccY7WyPi.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_27254.exe
+FAILED: cmTC_27254.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj -o cmTC_27254.exe -Wl,--out-implib,libcmTC_27254.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_27254.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\cc0EqhCm.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_27254.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_27254.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_27254.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-vgrl29
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_5ced7 && [1/2] Building C object CMakeFiles/cmTC_5ced7.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_5ced7.exe
+FAILED: cmTC_5ced7.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_5ced7.dir/testCCompiler.c.obj -o cmTC_5ced7.exe -Wl,--out-implib,libcmTC_5ced7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-9pdvlv
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_09fda && [1/2] Building C object CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccbSXxOk.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccbSXxOk.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_09fda.exe
+FAILED: cmTC_09fda.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj -o cmTC_09fda.exe -Wl,--out-implib,libcmTC_09fda.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09fda.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccZ7ja5p.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_09fda.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_09fda.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_09fda.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-sh762f
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_bd33d && [1/2] Building C object CMakeFiles/cmTC_bd33d.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_bd33d.exe
+FAILED: cmTC_bd33d.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_bd33d.dir/testCCompiler.c.obj -o cmTC_bd33d.exe -Wl,--out-implib,libcmTC_bd33d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-x5ielc
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_f7611 && [1/2] Building C object CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccy1UdlV.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccy1UdlV.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_f7611.exe
+FAILED: cmTC_f7611.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj -o cmTC_f7611.exe -Wl,--out-implib,libcmTC_f7611.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7611.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccqj4UK0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_f7611.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_f7611.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_f7611.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-3begvd
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_ec6f3 && [1/2] Building C object CMakeFiles/cmTC_ec6f3.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_ec6f3.exe
+FAILED: cmTC_ec6f3.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_ec6f3.dir/testCCompiler.c.obj -o cmTC_ec6f3.exe -Wl,--out-implib,libcmTC_ec6f3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-uunh2i
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_1dc22 && [1/2] Building C object CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccO7GQSZ.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccO7GQSZ.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_1dc22.exe
+FAILED: cmTC_1dc22.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj -o cmTC_1dc22.exe -Wl,--out-implib,libcmTC_1dc22.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1dc22.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccM8mW94.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_1dc22.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_1dc22.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1dc22.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-oh08pg
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_f15f4 && [1/2] Building C object CMakeFiles/cmTC_f15f4.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_f15f4.exe
+FAILED: cmTC_f15f4.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_f15f4.dir/testCCompiler.c.obj -o cmTC_f15f4.exe -Wl,--out-implib,libcmTC_f15f4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-u071lr
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_07805 && [1/2] Building C object CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\cc0b1p4f.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\cc0b1p4f.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_07805.exe
+FAILED: cmTC_07805.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj -o cmTC_07805.exe -Wl,--out-implib,libcmTC_07805.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_07805.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\cccKzZxg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_07805.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_07805.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_07805.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-l2r9v3
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_a2e98 && [1/2] Building C object CMakeFiles/cmTC_a2e98.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_a2e98.exe
+FAILED: cmTC_a2e98.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_a2e98.dir/testCCompiler.c.obj -o cmTC_a2e98.exe -Wl,--out-implib,libcmTC_a2e98.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-o4444c
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_3ccc3 && [1/2] Building C object CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\cckywEUo.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\cckywEUo.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_3ccc3.exe
+FAILED: cmTC_3ccc3.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj -o cmTC_3ccc3.exe -Wl,--out-implib,libcmTC_3ccc3.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ccc3.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccmlCShu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_3ccc3.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_3ccc3.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_3ccc3.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-a9fsjg
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_1bccd && [1/2] Building C object CMakeFiles/cmTC_1bccd.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_1bccd.exe
+FAILED: cmTC_1bccd.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_1bccd.dir/testCCompiler.c.obj -o cmTC_1bccd.exe -Wl,--out-implib,libcmTC_1bccd.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-3vhfk0
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_90ad8 && [1/2] Building C object CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\micha\AppData\Local\Temp\ccfxJCLx.s
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+ c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj C:\Users\micha\AppData\Local\Temp\ccfxJCLx.s
+GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+[2/2] Linking C executable cmTC_90ad8.exe
+FAILED: cmTC_90ad8.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE  -v CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj -o cmTC_90ad8.exe -Wl,--out-implib,libcmTC_90ad8.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE
+COLLECT_LTO_WRAPPER=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe
+Target: arm-none-eabi
+Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+COMPILER_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_90ad8.exe' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+ c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/collect2.exe -plugin c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/liblto_plugin-0.dll -plugin-opt=c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\micha\AppData\Local\Temp\ccT3wt9C.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=c:\progra~1\raspbe~1\picosd~1.1\gcc-ar~1\bin\../arm-none-eabi -X -o cmTC_90ad8.exe c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crti.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtbegin.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1 -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib -Lc:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../arm-none-eabi/lib CMakeFiles/cmTC_90ad8.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_90ad8.dll.a --major-image-version 0 --minor-image-version 0 --start-group -lgcc -lc --end-group c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtend.o c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/crtn.o
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/micha/Documents/pico-examples/sram/build/CMakeFiles/CMakeScratch/TryCompile-sumc2z
+
+Run Build Command(s):C:/PROGRA~1/RASPBE~1/PICOSD~1.1/ninja/ninja.exe cmTC_d925f && [1/2] Building C object CMakeFiles/cmTC_d925f.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_d925f.exe
+FAILED: cmTC_d925f.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\RASPBE~1\PICOSD~1.1\GCC-AR~1\bin\AR19DD~1.EXE   CMakeFiles/cmTC_d925f.dir/testCCompiler.c.obj -o cmTC_d925f.exe -Wl,--out-implib,libcmTC_d925f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
