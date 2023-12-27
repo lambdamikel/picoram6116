@@ -82,20 +82,18 @@ expansion header (PIN 37):
 
 ![WAIT](pics/wait.jpg)
 
-If you don't use the J1 to WAIT connection,
-you will need to hold the Microprofessor in RESET while operating
-PicoRAM - see the [Rev. 3 Demo Video](https://youtu.be/Uu-U00VHX-8)).
-However, with Rev. 4 (the current version from the repository) you
-will not need this - as shown in [the Rev. 4 demo
-video](https://youtu.be/QXIxJ-ij4dM)). This video shows the MPF-1P,
-but it also applies to the MPF-1B.
+If you don't use the J1 to WAIT connection, you will need to hold the
+Microprofessor in RESET while operating PicoRAM - see the [Rev. 3 Demo
+Video](https://youtu.be/Uu-U00VHX-8).  However, this is no longer
+required with Rev. 4 (the current version from this repository) - as
+shown in [the Rev. 4 demo video](https://youtu.be/QXIxJ-ij4dM)). This
+video shows the MPF-1P, but it also applies to the MPF-1B.
 
 PicoRAM needs a FAT32-formatted (max 32 GB) Micro SD Card. Copy the
 appropriate `6116.INI` file to it, and get the correct demo programs
 for your machine (MPF-1B or MPF-1P). Unzip everything to the root
 directory; sub-directories are not supported. See [this
 directory.](software/).
-
 
 PicoRAM 6116 is usally powered over the 6116 SRAM socket. Make sure
 that the **POWER** button is pushed down, and that the **SEL VCC**
