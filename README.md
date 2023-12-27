@@ -93,7 +93,7 @@ PicoRAM needs a FAT32-formatted (max 32 GB) Micro SD Card. Copy the
 appropriate `6116.INI` file to it, and get the correct demo programs
 for your machine (MPF-1B or MPF-1P). Unzip everything to the root
 directory; sub-directories are not supported. See [this
-directory.](software/).
+directory.](software/)
 
 PicoRAM 6116 is usally powered over the 6116 SRAM socket. Make sure
 that the **POWER** button is pushed down, and that the **SEL VCC**
