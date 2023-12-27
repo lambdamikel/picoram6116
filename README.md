@@ -168,10 +168,11 @@ latch. The latches are merely used for their tri-state capabilities.
 Unlike my previous design, [PicoRAM
 2090](https://github.com/lambdamikel/picoram2090), this design does
 not utilize any voltage level converters.  It turns out that the Pico
-is 5V-tolerant; also see [this article from
-Hackaday.](https://hackaday.com/2023/04/05/rp2040-and-5v-logic-best-friends-this-fx9000p-confirms/)
+(RP2040) is really pretty much 5V-tolerant; also see [this article
+from
+Hackaday](https://hackaday.com/2023/04/05/rp2040-and-5v-logic-best-friends-this-fx9000p-confirms/)
 and the [Hackaday coverage of PicoRAM
-2090](https://hackaday.com/2023/09/10/pi-pico-becomes-sram-for-1981-educational-computer/)
+2090.](https://hackaday.com/2023/09/10/pi-pico-becomes-sram-for-1981-educational-computer/)
 
 ![HP Logic Analyzer 1](pics/hp-1.jpg)
 
@@ -193,7 +194,7 @@ There is also a [Bill of Material (BOM).](gerbers/PicoRAM6116.csv)
 
 ### Gerbers 
 
-See [here.](gerbers/) 
+See [here.](gerbers/PicoRAM6116-Gerbers.zip) 
 
 ## Firmware Image
 
