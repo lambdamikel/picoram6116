@@ -199,7 +199,7 @@ See [here.](gerbers/PicoRAM6116-Gerbers.zip)
 ## Firmware Image
 
 The current version is 1.1, December 2023 and the `.uf2` image can be
-found [here.](v1.1/sram6116.uf2).
+found [here.](v1.1/sram6116.uf2)
 
 ## Firmware Sources
 
