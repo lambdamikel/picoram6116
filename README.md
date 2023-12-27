@@ -203,7 +203,7 @@ found [here.](firmware/v1.1/sram6116.uf2)
 
 ## Firmware Sources
 
-Soon. 
+See [here.](src/)
 
 ## Acknowledgements
 
