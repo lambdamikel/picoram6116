@@ -19,13 +19,13 @@ Computer System](https://github.com/lambdamikel/picoram2090); also
 see the [development logs on
 Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
-### PicoRAM 6116 with the MPF-1B
+### PicoRAM 6116 with the MPF-1B - older PCB Rev. 3 
 
 ![PicoRAM 6116 MPF-1B a](pics/6116-mpf-1b-a.jpg)
 
 ![PicoRAM 6116 MPF-1B b](pics/6116-mpf-1b-b.jpg)
 
-### PicoRAM 6116 with the MPF-1P (IP / One Plus)
+### PicoRAM 6116 with the MPF-1P (IP / One Plus) - current PCB Rev. 4 
 
 ![PicoRAM 6116 MPF-1P a](pics/6116-mpf-1p-a.jpg)
 
@@ -66,9 +66,9 @@ Features:
   and allows the specification of an autoload program for each of the 4
   memory banks. 
 
-- Easy build & installation: requires only simple modifications to the
-  Microtronic PCB, and PicoRAM uses pre-assembled off-the-shelf
-  modules and through-hole components only.
+- Easy build & installation: PicoRAM 6116 uses pre-assembled
+  off-the-shelf modules and through-hole components only, and no
+  (destructive) modifications to the Microprofessor are required.
 
 ## Usage
 
