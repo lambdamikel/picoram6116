@@ -1,21 +1,14 @@
 # picoram6116
-A Raspberry Pi Pico (RP2040)-based 6116 SRAM Emulator &amp; SD Card Interface for the Multitech Microprofessor Vintage Single Board Computers 
 
 A Raspberry Pi Pico (RP2040)-based 6161 SRAM Emulator, SD Card
 Interface, and Multi-Expansion for the [Multitech Microprofessor
 MPF-1B and MPF-1P SBCs (Single Board
 Computers)](https://hackaday.io/project/183618-exploring-the-microprofessor).
 
-[PicoRAM 6116 Demo Video with MPF-1B / Rev. 3 PCB](https://youtu.be/Uu-U00VHX-8)
-[PicoRAM 6116 Demo Video with MPF-1P / Rev. 4 PCB](https://youtu.be/QXIxJ-ij4dM)
+Demo videos:
+- [PicoRAM 6116 Demo Video with MPF-1B / Rev. 3 PCB](https://youtu.be/Uu-U00VHX-8)
 
-![PicoRAM 6116 MPF-1B a](pics/6116-mpf-1b-a.jpg)
-
-![PicoRAM 6116 MPF-1B b](pics/6116-mpf-1b-b.jpg)
-
-![PicoRAM 6116 MPF-1P a](pics/6116-mpf-1p-a.jpg)
-
-![PicoRAM 6116 MPF-1P b](pics/6116-mpf-1p-b.jpg)
+- [PicoRAM 6116 Demo Video with MPF-1P / Rev. 4 PCB](https://youtu.be/QXIxJ-ij4dM)
 
 The [development
 logs](https://hackaday.io/project/194092-picoram-6116-sram-emulator-sd-card-interface)
@@ -26,6 +19,15 @@ Computer System.](https://github.com/lambdamikel/picoram2090); also
 see the [development logs on
 Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
+![PicoRAM 6116 MPF-1B a](pics/6116-mpf-1b-a.jpg)
+
+![PicoRAM 6116 MPF-1B b](pics/6116-mpf-1b-b.jpg)
+
+![PicoRAM 6116 MPF-1P a](pics/6116-mpf-1p-a.jpg)
+
+![PicoRAM 6116 MPF-1P b](pics/6116-mpf-1p-b.jpg)
+
+
 ## Latest News
 
 ### December 17th 2023
@@ -35,12 +37,12 @@ Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
 ![Hackster](pics/hackster-6116.jpg)
 
-I archived [the PDF}(pics/hackster-6116.pdf) as well
+I also archived [the PDF of the Hackster article.](pics/hackster-6116.pdf)
 
 
 ## About
 
-**PicoRAM 6116 is the ultimate expansion for the vintage Microprofessor Single Board Computer (SBC) from Multitech (nowadays knows as Acer).**
+**PicoRAM 6116 is the ultimate expansion for the vintage Microprofessor SBCs.**
 
 Features:
 
@@ -48,9 +50,9 @@ Features:
   dumps) and easy file exchange with the PC (FAT32 filesystem). ASCII
   HEX format, additionally supporting comments and target addresses.
 
-- Plugs into the U8 6116 socket on the MPF-1B (address range `0x1800 -
-  0x1FFF`) or the U5 6116 socket on the MPF-1P (address range `0xF800
-  - 0xFFFF`).
+- Plugs into the U8 6116 socket on the MPF-1B
+  (address range `0x1800 - 0x1FFF`) or the U5 6116 socket on the MPF-1P
+  (address range `0xF800 - 0xFFFF`).
 
 - Comfortable UI: 5 buttons and OLED display.
 
@@ -67,12 +69,14 @@ Features:
 
 ## Usage
 
-The JP1 Jumper should be on the right position:
+The JP1 Jumper should be in the right position:
+
 ![JP1 Jumper](pics/jp1.jpg)
 
 The current version is PCB Rev. 4. This PCB hosts an extra single pin
 connector (J1). Connect J1 to the Microprofessor's WAIT on the
 expansion header (PIN 37):
+
 ![WAIT](pics/wait.jpg)
 
 If you don't use the J1 to WAIT connection,
@@ -145,7 +149,9 @@ with the author's machines, and might not work for your machine.
 ## Theory of Operation
 
 The Pico emulates the 6116 SRAM of the Microprofessor:
+
 ![6116 Chip](pics/6116-chip.jpg)
+
 ![6116 Pinout](pics/6116-Pinout.jpg)
 
 The Pico is overclocked to 250 Mhz to make this possible; this
