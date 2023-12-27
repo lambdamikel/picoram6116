@@ -12,7 +12,7 @@ Demo videos:
 
 The [development
 logs](https://hackaday.io/project/194092-picoram-6116-sram-emulator-sd-card-interface)
-are on [Hackaday.](https://hackaday.com).
+are on [Hackaday.](https://hackaday.com)
 
 This project is a follow-up to [PicoRAM 2090 for the Busch Microtronic
 Computer System](https://github.com/lambdamikel/picoram2090); also
