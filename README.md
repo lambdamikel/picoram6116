@@ -6,6 +6,9 @@ MPF-1B and MPF-1P SBCs (Single Board
 Computers)](https://hackaday.io/project/183618-exploring-the-microprofessor).
 
 Demo videos:
+
+- [Microprofessor Assembler Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/KoFRpU5a6iM)
+
 - [PicoRAM 6116 Demo Video with MPF-1B / Rev. 3 PCB](https://youtu.be/Uu-U00VHX-8)
 
 - [PicoRAM 6116 Demo Video with MPF-1P / Rev. 4 PCB](https://youtu.be/QXIxJ-ij4dM)
