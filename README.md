@@ -7,7 +7,9 @@ Computers)](https://hackaday.io/project/183618-exploring-the-microprofessor).
 
 Demo videos:
 
-- [Microprofessor Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/KoFRpU5a6iM)
+- [Microprofessor MPF-1P Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/II9slfHpY4s)
+
+- [Microprofessor MPG-1(B) Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/KoFRpU5a6iM)
 
 - [PicoRAM 6116 Demo Video with MPF-1B / Rev. 3 PCB](https://youtu.be/Uu-U00VHX-8)
 
