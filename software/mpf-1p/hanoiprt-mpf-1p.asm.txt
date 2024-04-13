@@ -1,0 +1,169 @@
+;;;
+;;; Macros
+;;; 
+
+.macro	pushall		
+    push	af
+    push	bc
+    push	de
+    push    hl
+.endm
+
+.macro	popall		
+    pop     hl
+    pop	    de
+    pop	    bc 
+    pop     af
+.endm
+
+
+org 0xf800
+
+;;;
+;;; Init and call to Hanoi 
+;;;  
+
+start: 
+
+    ld   hl,0x0100 
+    call tone1 
+    
+    ld   hl, msg_disks
+    call prtmes
+    
+    call scan2
+    sub  48      ; # disks in a
+    
+    pushall
+    
+    ld   hl, msg_speed
+    call prtmes
+    
+    call scan2
+    ld   (speed), a
+    
+    popall 
+    
+    ld b, 0xA	; source
+    ld c, 0xB	; target
+    ld d, 0xC 	; intermediate
+    
+    call hanoi
+    
+    ld   hl,0x0100 
+    call tone2 
+        
+    jr start 
+
+;;;
+;;; Hanoi 
+;;; 
+
+hanoi:
+    
+    ; Move a disks from b (source) to c (target) via d (intermediate)
+
+    or	a		; If 0 disks to move, return
+    ret	z
+
+    pushall	    ; Prepare first recursive call 	
+    dec a       ; One disk less 
+    ld	e,c		; Swap c and d (target and intermediate)
+    ld	c,d
+    ld	d,e
+    call hanoi	; First recursive call 
+    popall		; Restore registers
+
+
+    pushall	        ; Display call is destructive, save registers 
+    call movement
+    popall
+    
+    pushall     ; Prepare second recursive call 
+    dec a       ; Same store 
+    ld	e,b		; Now move stack from intermediate to target via source
+    ld	b,d		; Source is still in b, target in c and intermediate in d
+    ld	d,e
+    call hanoi	; Second recursive call 
+    popall      ; Restore registers 
+    
+    ret         ; Return 
+
+;;;
+;;; Show Move on Display 
+;;; 
+
+movement:
+
+    call clear 
+    
+    ld      hl, msg_move
+    pushall 
+    call msg
+    popall 
+    
+    pushall 
+    call    hex1 
+    popall 
+    ld      hl, msg_from
+    pushall
+    call    msg
+    popall 
+    ld      a,b
+    pushall 
+    call    hex1
+    popall 
+    ld      hl, msg_to
+    pushall 
+    call    msg
+    popall 
+    ld      a,c
+    pushall 
+    call    hex1
+    popall
+    
+    call    cr2
+    
+    ld      a,(speed)
+    ld      b, a
+    
+dispdelay:
+    call	scan1 
+    djnz    dispdelay
+
+    ret
+
+;;;
+;;; Data Region
+;;; 
+
+speed       defb    0x00 
+
+msg_disks   defb    "NUMBER DISKS?"
+            defb    0x0d
+msg_speed   defb    "DISP SPEED?"
+            defb    0x0d
+msg_move    defb    "MOVE "
+            defb    0x0d
+msg_from    defb    " FROM "
+            defb    0x0d
+msg_to      defb    " TO "
+            defb    0x0d
+            
+msg_cr      defb    0x0d 
+
+;;;
+;;; Firmware Routines 
+;;; 
+
+clear		equ 0x09b9
+hex1        equ 0x0aad
+prtmes      equ 0x0886
+printt      equ 0x0893
+conver      equ 0x0821
+cr2         equ 0x0981
+msg         equ 0x09ca
+scan1		equ 0x029b
+scan2       equ 0x024d 
+tone1		equ 0x086f
+tone2       equ 0x0872

@@ -7,6 +7,8 @@ Computers)](https://hackaday.io/project/183618-exploring-the-microprofessor).
 
 Demo videos:
 
+- [Microprofessor MPF-1P Z80 PicoRAM 6116 and MPF-1P Printer - The Towers of Hanoi](https://youtu.be/II9slfHpY4s)
+
 - [Microprofessor MPF-1P Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/II9slfHpY4s)
 
 - [Microprofessor MPG-1(B) Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/KoFRpU5a6iM)
