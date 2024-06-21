@@ -9,8 +9,6 @@ Demo videos:
 
 - [John's E&L MT-80Z MPF-1B variant with PicoRAM 6116](https://youtu.be/OmJJHkyRD8g)
 
-![MT80Z](pics/mt80z.png)
-
 - [Microprofessor MPF-1P Z80 PicoRAM 6116 and MPF-1P Printer - The Towers of Hanoi](https://youtu.be/8veR5Y--iOg)
 
 - [Microprofessor MPF-1P Z80 Assembly Programming with PicoRAM 6116 - The Towers of Hanoi](https://youtu.be/II9slfHpY4s)
@@ -42,7 +40,19 @@ Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
 ![PicoRAM 6116 MPF-1P b](pics/6116-mpf-1p-b.jpg)
 
+
 ## Latest News
+
+### June 2024
+
+John W. added PicoRAM 6116 to his E&L MT-80Z MPF-1B clone and, after
+initial troubles, got it to work flawlessly. Very nice machine and 
+progress - thanks for sharing, John! Good to know that PicoRAM 6116
+also works well with the less common Microprofessor family members.
+
+![MT80Z](pics/mt80z.png)
+
+## Older News
 
 ### December 17th 2023
 
