@@ -7,6 +7,8 @@ Computers)](https://hackaday.io/project/183618-exploring-the-microprofessor).
 
 Demo videos:
 
+- [PicoRAM 6116 Review by "Mein Elektronik Hobby" (in German)](https://youtu.be/-fE-1R6At-s)
+
 - [John's E&L MT-80Z MPF-1B variant with PicoRAM 6116](https://youtu.be/OmJJHkyRD8g)
 
 - [Microprofessor MPF-1P Z80 PicoRAM 6116 and MPF-1P Printer - The Towers of Hanoi](https://youtu.be/8veR5Y--iOg)
@@ -43,6 +45,16 @@ Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
 ## Latest News
 
+### October 2024
+
+[PicoRAM 6116 build and demo video](https://youtu.be/-fE-1R6At-s) on
+the YouTube channel "Mein Elektronik Hobby" (in German). Glad it
+worked out flawlessly - thanks for the positive review, Werner!
+
+![Werner](pics/werner-video.jpg)
+
+## Older News
+
 ### June 2024
 
 John W. added PicoRAM 6116 to his E&L MT-80Z MPF-1B clone and, after
@@ -52,7 +64,6 @@ also works well with the less common Microprofessor family members.
 
 ![MT80Z](pics/mt80z.png)
 
-## Older News
 
 ### December 17th 2023
 
