@@ -1,0 +1,212 @@
+;;;
+;;; SP0256-AL2 Allophones / Phonemes 
+;;;
+
+SP_PA1 equ 0x00 
+SP_PA2 equ 0x01 
+SP_PA3 equ 0x02
+SP_PA4 equ 0x03 
+SP_PA5 equ 0x04
+SP_OY  equ 0x05 ; /OY/ BOY 420MS
+SP_AY  equ 0x06 ; /AY/ Sky 260MS
+SP_EH  equ 0x07 ; /EH/ End 70MS
+SP_KK3 equ 0x08 ; /KK3/ Comb 120MS
+SP_PP  equ 0x09 ; /PP/ Pow 21OMS
+SP_JH  equ 0x0A ; /JH/ Dodge 140MS
+SP_NN1 equ 0x0B ; /NN1/ Thin 140MS
+SP_IH  equ 0x0C ; /IH/ Sit 70MS
+SP_TT2 equ 0x0D ; /TT2/ To 140MS
+SP_RR1 equ 0x0E ; /RR1/ Rural 170MS
+SP_AX  equ 0x0F ; /AX/ Succeed 70MS
+SP_MM  equ 0x10 ; /MM/ Milk 180MS
+SP_TT1 equ 0x11 ; /TT1/ Part 1OOMS
+SP_DH1 equ 0x12 ; /DH1/ They 290MS
+SP_IY  equ 0x13 ; /IY/ See 250MS
+SP_EY  equ 0x14 ; /EY/ Beige 280MS
+SP_DD1 equ 0x15 ; /DD1/ Could 70MS
+SP_UW1 equ 0x16 ; /UW1/ To 1OOMS
+SP_AO  equ 0x17 ; /AO/ Aught 1OOMS
+SP_AA  equ 0x18 ; /AA/ Hot 1OOMS
+SP_YY2 equ 0x19 ; /YY2/ Yes 180MS
+SP_AE  equ 0x1A ; /AE/ Hat 120MS
+SP_HH1 equ 0x1B ; /HH1/ He 130MS
+SP_BB1 equ 0x1C ; /BB1/ Business 80MS
+SP_TH  equ 0x1D ; /TH/ Thin 180MS
+SP_UH  equ 0x1E ; /UH/ Book 100MS
+SP_UW2 equ 0x1F ; /UW2/ Food 260MS
+SP_AW  equ 0x20 ; /AW/ Out 370MS
+SP_DD2 equ 0x21 ; /DD2/ Do 160MS
+SP_GG3 equ 0x22 ; /GG3/ Wig 140MS
+SP_VV  equ 0x23 ; /VV/ Vest 19OMS
+SP_GG1 equ 0x24 ; /GG1/ Got 80MS
+SP_SH  equ 0x25 ; /SH/ Ship 160MS
+SP_ZH  equ 0x26 ; /ZH/ Azure 190MS
+SP_RR2 equ 0x27 ; /RR2/ Brain 12OMS
+SP_FF  equ 0x28 ; /FF/ Food 150MS
+SP_KK2 equ 0x29 ; /KK2/ Sky 190MS
+SP_KK1 equ 0x2A ; /KK1/ Can't 160MS
+SP_ZZ  equ 0x2B ; /ZZ/ Zoo 21OMS
+SP_NG  equ 0x2C ; /NG/ Anchor 220MS
+SP_LL  equ 0x2D ; /LL/ Lake 110MS
+SP_WW  equ 0x2E ; /WW/ Wool 180MS
+SP_XR  equ 0x2F ; /XR/ Repair 360MS
+SP_WH  equ 0x30 ; /WH/ Whig 200MS
+SP_YY1 equ 0x31 ; /YY1/ Yes 130MS
+SP_CH  equ 0x32 ; /CH/ Church 190MS
+SP_ER1 equ 0x33 ; /ER1/ Fir 160MS
+SP_ER2 equ 0x34 ; /ER2/ Fir 300MS
+SP_OW  equ 0x35 ; /OW/ Beau 240MS
+SP_DH2 equ 0x36 ; /DH2/ They 240MS
+SP_SS  equ 0x37 ; /SS/ Vest 90MS
+SP_NN2 equ 0x38 ; /NN2/ No 190MS
+SP_HH2 equ 0x39 ; /HH2/ Hoe 180MS
+SP_OR  equ 0x3A ; /OR/ Store 330MS
+SP_AR  equ 0x3B ; /AR/ Alarm 290MS
+SP_YR  equ 0x3C ; /YR/ Clear 350MS
+SP_GG2 equ 0x3D ; /GG2/ Guest 40MS
+SP_EL  equ 0x3E ; /EL/ Saddle 190MS
+SP_BB2 equ 0x3F ; /BB2/ Business 50MS
+
+speech      equ 0x00fe 
+
+;;;
+;;; Demo 
+;;; 
+
+org 0x1800
+    
+ld a, 0xe2 
+ld bc, 0x00fe 
+out (c), a 
+
+call showstatus 
+call showstatus 
+call showstatus 
+call showstatus 
+
+;;
+;;
+;;
+
+ld hl, string 
+call speak 
+ret
+
+;;
+;;
+;;
+
+speak: 
+
+ld a, (hl)
+
+or a
+ret z 
+
+ld bc, 0x00fe 
+out (c), a
+
+push hl
+call waitready_showa
+pop hl
+
+inc hl 
+
+jr speak 
+
+;;
+;; Strings 
+;;
+
+string  defb SP_PA2, SP_DD1, SP_AA, SP_PA2, SP_KK1, SP_PA3, SP_TT1, SP_ER1, SP_PA3, SP_PA5, SP_PA3 ; doctor 
+string1 defb SP_NN1, SP_EY, SP_MM, SP_PA3, SP_PA5, SP_PA3, SP_PA2 ; name 
+string2 defb SP_KK1, SP_AA, SP_NN1, SP_PA3, SP_TT1, SP_IH, SP_NN1, SP_YY1, SP_UW1, SP_PA3, SP_PA5, SP_PA3 ; continue 
+string3 defb SP_YY1, SP_EH, SP_SS, SP_PA3, SP_TT1, SP_ER1, SP_PA2, SP_DD1, SP_EY, SP_PA3, SP_PA5, SP_PA3, SP_PA3 ; yesterday
+string4 defb SP_TT1, SP_AA, SP_MM, SP_AO, SP_RR2, SP_RR2, SP_OW, SP_PA3, SP_PA5, SP_PA3, 0 ; tomorrow + end of string marker 
+
+;;
+;; Speech Routines
+;;
+
+showa:
+        ld      hl,outbf
+        ld      b,1
+        
+preploop:
+        call    hex7seg
+        inc     de
+        djnz    preploop
+
+        ld      ix,outbf
+
+speakdelay:     
+        ld a, (speech_delay)
+        ld b, a 
+    
+loop1:
+        call scan1 
+        djnz loop1
+
+        ret
+
+showstatus:
+    ld bc, 0x00fe
+    in a, (c)
+    call showa
+    ret 
+
+waitready:
+    ld bc, 0x00fe
+    in a, (c)
+    push af
+    
+    ld  hl,outbf
+    call    hex7seg
+    ld      ix,outbf
+    call    scan1 
+
+    pop af
+    or a
+    ret z
+    jr waitready 
+
+
+waitready_showa:
+     
+    ld  hl,outbf
+    call    hex7seg
+    ld      ix,outbf
+    call    scan1 
+    
+    ld bc, 0x00fe
+    in a, (c)
+   
+    or a
+    ret z
+    jr waitready 
+
+;;;
+;;; Data Region
+;;; 
+
+outbf       defb    0
+            defb    0
+            defb    0
+            defb    0 
+            defb    0 
+            defb    0
+
+speech_delay defb   30 
+
+;;;
+;;; Firmware Routines 
+;;; 
+
+hex7seg         equ 0x0678
+scan            equ 0x05fe
+scan1           equ 0x0624
+tone1           equ 0x05de
+tone2           equ 0x05e2
+
+
+
