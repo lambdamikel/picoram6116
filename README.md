@@ -45,6 +45,40 @@ Hackaday.](https://hackaday.io/project/192655-picoram-2090)
 
 ## Latest News
 
+### October 2025
+
+During my [RetroChallenge 2025/10
+contribution](https://hackaday.io/project/204153-3d-graphics-on-the-microprofessor-mpf-1b),
+I encountered a pretty nasty issue which took me quite a while to
+debug and resolve. Mostly chasing red herrings. 
+
+My [rotating 3D Cube](https://youtu.be/pLtGfMtQikc) was glitching, and
+it took me a long time to realize that this was caused by noisy ADC
+button decoding and inapropriate ADC level thresholds. The problem was
+that this happened without visual feedback in the UI, so I was unware
+of it. Now, for each detected button press, the SRAM emulation is
+halted; and also for spurious button presses that don't cause an UI
+action. In the case, the `CANCEL2` button was responsible. Now,
+halting SRAM emulation works properly if the Z80 WAIT signal is
+connected to PicoRAM, which I had not in the case (I simply hold the
+RESET button manually on the Microprofessor instead). Obviously, you
+can't just halt SRAM emulation and not halt the CPU and expect it to
+run properly. 
+
+So, this problem was fixed by adjusting the ADC threshold levels in
+the `6116.INI` file. However, I didn't like that the spurious button
+presses weren't reported and happened "silently", leaving me unaware
+of what was happening. In the corresponding `case-switch` in the UI
+loop, there was no `switch case` for this case, and a `default` clause
+was missing as well. I have now added a `default` clause, and it will
+show an error message on the display informing the user that the ADC
+button threshold levels in the init file are inadequate and may case
+SRAM emulation glitches.
+
+Please install the [new firmware (Version 1.2).](firmware/sram6116_v1.2.uf2)
+
+## Older News
+
 ### October 2024
 
 [PicoRAM 6116 build and demo video](https://youtu.be/-fE-1R6At-s) on
@@ -53,7 +87,6 @@ worked out flawlessly - thanks for the positive review, Werner!
 
 ![Werner](pics/werner-video.jpg)
 
-## Older News
 
 ### June 2024
 
