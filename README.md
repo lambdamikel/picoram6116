@@ -58,12 +58,12 @@ button decoding and inapropriate ADC level thresholds. The problem was
 that this happened without visual feedback in the UI, so I was unware
 of it. Now, for each detected button press, the SRAM emulation is
 halted; and also for spurious button presses that don't cause an UI
-action (the `CANCEL2` button was responsible). Now, halting SRAM
-emulation works properly if the Z80 WAIT signal is connected to
-PicoRAM, which I had not in the case (I simply hold the RESET button
-manually on the Microprofessor instead). Obviously, you can't just
-halt SRAM emulation and not halt the CPU and expect it to run
-properly.
+action (the `CANCEL2` button was responsible). Now, halting the SRAM
+emulation can only work properly if the Z80 WAIT signal is connected
+to PicoRAM, which I had not in this case. Sometimes, I simply hold the
+RESET button manually on the Microprofessor instead whilst operating
+PicoRAM. Obviously, you can't just halt SRAM emulation and not halt
+the CPU and expect it to run properly.
 
 So, this problem was fixed by adjusting the ADC threshold levels in
 the `6116.INI` file. However, I didn't like that the spurious button
