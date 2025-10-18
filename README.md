@@ -54,10 +54,10 @@ debug and resolve. Mostly chasing red herrings.
 
 My [rotating 3D Cube](https://youtu.be/pLtGfMtQikc) was glitching, and
 it took me a long time to realize that this was caused by noisy ADC
-button decoding and inapropriate ADC level thresholds. The problem was
-that this happened without visual feedback in the UI, so I was unware
-of it. Now, for each detected button press, the SRAM emulation is
-halted; and also for spurious button presses that don't cause an UI
+button decoding and inappropriate ADC level thresholds. The problem
+was that this happened without visual feedback in the UI, so I was
+unware of it. Now, for each detected button press, the SRAM emulation
+is halted; and also for spurious button presses that don't cause an UI
 action (the `CANCEL2` button was responsible). Now, halting the SRAM
 emulation can only work properly if the Z80 WAIT signal is connected
 to PicoRAM, which I had not in this case. Sometimes, I simply hold the
