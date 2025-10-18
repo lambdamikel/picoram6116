@@ -21,7 +21,7 @@
 //
 //
 
-#define VERSION " v1.1  (C) 2023 "
+#define VERSION " v1.2  (C) 2025 "
 
 //
 // ADC Configuration (MPF.INI file!) 
@@ -37,7 +37,8 @@
 
 #define ADC_DEBUG_DELAY 100
 
-volatile bool DEBUG_ADC = false; 
+volatile bool DEBUG_ADC = false;
+volatile bool TUNE_ADC = false; 
 
 volatile char MACHINE[FILE_LENGTH] = "MPF-1P";
 volatile char BANK_PROG[4][FILE_LENGTH]; 
@@ -289,12 +290,49 @@ void render_display() {
 // UI Buttons 
 //
 
+volatile uint16_t adc = 0;
+
 typedef enum { NONE, UP, DOWN, BACK, OK, CANCEL, CANCEL2 } button_state; 
+
+uint32_t avg(uint32_t a, uint32_t b) {
+
+  if (a == 0) {
+    return b; 
+  } else if (b == 0) {
+    return a;
+  } else {
+    return ( a + b ) / 2;     
+
+  }
+  
+}
+
+uint32_t max(uint32_t a, uint32_t b) {
+
+  return a > b ? a : b; 
+  
+}
+
+uint32_t min(uint32_t a, uint32_t b) {
+
+  return a < b ? a : b; 
+  
+}
+
+
+bool some_button_pressed(void) {
+
+  adc_select_input(1); 
+  adc = adc_read();
+
+  return adc <= 0xfe0; 
+
+}
 
 button_state read_button_state(void) { 
 
   adc_select_input(1); 
-  uint16_t adc = adc_read();
+  adc = adc_read();
   
   if (adc <= UP_ADC) {
     return UP; 
@@ -326,6 +364,31 @@ void wait_for_button(void) {
   return;
 }
 
+bool wait_for_button_release_raw(void) {
+  adc_select_input(1); 
+  do {
+    adc = adc_read();
+  } while (adc < 0xFE0);
+
+  sleep_ms(500);
+  
+}
+
+void wait_for_button_raw(void) {
+  adc_select_input(1); 
+  do {
+    adc = adc_read();
+  } while (adc > 0xFE0);
+
+  uint32_t adc0 = adc;
+  
+  wait_for_button_release_raw();
+
+  adc = adc0;
+  
+  return;
+}
+
 bool wait_for_yes_no_button(void) {
   button_state button; 
   while (true) {
@@ -350,6 +413,90 @@ void display_loop() {
 
   disp_mode cur_disp_mode = ON; 
   button_state buttons = NONE; 
+
+  //
+  //
+  //
+
+  if (TUNE_ADC) {
+
+    reset_hold(); 
+    clear_screen();       
+
+    adc_select_input(1); 
+    print_string(0,0,"BUTTON TUNING ");   
+    print_string(0,1,"----------------");
+    wait_for_button_release_raw();
+    sleep_ms(DISPLAY_DELAY_LONG); 
+    sleep_ms(DISPLAY_DELAY_LONG); 
+
+    CANCEL_ADC = 0;
+    uint32_t CANCEL_ADC_MIN = 0xFFF; 
+    for (int i = 1; i < 6; i++) {
+      print_string(0,2,"PUSH CANCEL (%d) ", i);
+      wait_for_button_raw(); 
+      print_string(0,3,"ADC:%03x", adc);
+      CANCEL_ADC = max(adc, CANCEL_ADC);
+      CANCEL_ADC_MIN = min(adc, CANCEL_ADC_MIN);
+    }
+    CANCEL2_ADC = avg(CANCEL_ADC, 0xFFF); 
+    
+    OK_ADC = 0;
+    uint32_t OK_ADC_MIN = 0xFFF; 
+    for (int i = 1; i < 6; i++) {
+      print_string(0,2,"PUSH OK (%d)     ", i);
+      wait_for_button_raw(); 
+      print_string(0,3,"ADC:%03x", adc);
+      OK_ADC = max(adc, OK_ADC);
+      OK_ADC_MIN = min(adc, OK_ADC_MIN);
+    }
+    OK_ADC = avg(OK_ADC, CANCEL_ADC_MIN); 
+
+    BACK_ADC = 0;
+    uint32_t BACK_ADC_MIN = 0xFFF; 
+    for (int i = 1; i < 6; i++) {
+      print_string(0,2,"PUSH NXT/PRV (%d)", i);
+      wait_for_button_raw(); 
+      print_string(0,3,"ADC:%03x", adc);
+      BACK_ADC = max(adc, BACK_ADC); 
+      BACK_ADC_MIN = min(adc, BACK_ADC_MIN);
+    }
+    BACK_ADC = avg(BACK_ADC, OK_ADC_MIN); 
+
+    DOWN_ADC = 0;
+    uint32_t DOWN_ADC_MIN = 0xFFF; 
+    for (int i = 1; i < 6; i++) {
+      print_string(0,2,"PUSH DOWN (%d)   ", i);
+      wait_for_button_raw(); 
+      print_string(0,3,"ADC:%03x", adc);
+      DOWN_ADC = max(adc, DOWN_ADC); 
+      DOWN_ADC_MIN = min(adc, DOWN_ADC_MIN);
+    }
+    DOWN_ADC = avg(DOWN_ADC, BACK_ADC_MIN); 
+
+    UP_ADC = 0;
+    for (int i = 1; i < 6; i++) {
+      print_string(0,2,"PUSH UP (%d)     ", i);
+      wait_for_button_raw(); 
+      print_string(0,3,"ADC:%03x", adc);
+      UP_ADC = max(adc, UP_ADC); 
+    }
+    UP_ADC = avg(UP_ADC, DOWN_ADC_MIN); 
+
+    clear_screen();       
+    print_string(0,0,"TUNING COMPLETE!");
+    print_string(0,1,"----------------");
+    print_string(0,2,"Save ADC.INI?");
+    if (! wait_for_yes_no_button()) {
+      print_string(0,3,"*** CANCELED ***");
+      sleep_ms(DISPLAY_DELAY);
+      sleep_ms(DISPLAY_DELAY);
+      sleep_ms(DISPLAY_DELAY);
+      return;
+    } else {
+      save_buttons_config_file(); 
+    }
+  } 
 
   //
   //
@@ -486,6 +633,21 @@ void display_loop() {
 	  clear_screen(); 	  
 
 	break;
+
+      default :
+
+	clear_screen();
+	sprintf(text_buffer, "ADC #%1x KEY #%1x", adc, buttons); 
+	WriteString(buf, 0, 0, text_buffer);
+	print_string(0,1,"*  ADC GLITCH  *"); 
+	print_string(0,2,"* BUTTON PRESS *"); 
+	print_string(0,3,"* CONFIG ERROR *");
+	render(buf, &frame_area);
+
+	sleep_ms(DISPLAY_DELAY);
+	sleep_ms(DISPLAY_DELAY);
+	sleep_ms(DISPLAY_DELAY);
+	sleep_ms(DISPLAY_DELAY);
 	
       } 
 
@@ -651,7 +813,7 @@ int sd_read_init() {
   while (! skip) {
   
     if (! f_gets(MACHINE, sizeof(MACHINE), &fil)) {
-      show_error(0,0,"INI - MACHINE");
+      show_error_and_halt(0,0,"INI - MACHINE");
       skip = true; 
       break; 
     }
@@ -663,7 +825,7 @@ int sd_read_init() {
     //
     
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - CANCEL2");
+      show_error_and_halt(0,0,"INI - CANCEL2");
       skip = true; 
       break; 
     }
@@ -672,7 +834,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
 
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - CANCEL");
+      show_error_and_halt(0,0,"INI - CANCEL");
       skip = true; 
       break; 
     } 
@@ -681,7 +843,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
     
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - OK");
+      show_error_and_halt(0,0,"INI - OK");
       skip = true; 
       break; 
     }
@@ -690,7 +852,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
 
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - BACK");
+      show_error_and_halt(0,0,"INI - BACK");
       skip = true; 
       break; 
     } 
@@ -699,7 +861,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
   
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - DOWN");
+      show_error_and_halt(0,0,"INI - DOWN");
       skip = true; 
       break; 
     } 
@@ -708,7 +870,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
       
     if (! f_gets(buf, sizeof(buf), &fil)) {
-      show_error(0,0,"INI - UP");
+      show_error_and_halt(0,0,"INI - UP");
       skip = true; 
       break; 
     } 
@@ -721,7 +883,7 @@ int sd_read_init() {
     // 
 
     if (! f_gets(BANK_PROG[0], sizeof(BANK_PROG[0]), &fil)) {
-      show_error(0,0,"INI - PROG1");
+      show_error_and_halt(0,0,"INI - PROG1");
       skip = true; 
       break; 
     }
@@ -729,7 +891,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
 
     if (! f_gets(BANK_PROG[1], sizeof(BANK_PROG[1]), &fil)) {
-      show_error(0,0,"INI - PROG2");
+      show_error_and_halt(0,0,"INI - PROG2");
       skip = true; 
       break; 
     }
@@ -737,7 +899,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
 
     if (! f_gets(BANK_PROG[2], sizeof(BANK_PROG[2]), &fil)) {
-      show_error(0,0,"INI - PROG3");
+      show_error_and_halt(0,0,"INI - PROG3");
       skip = true; 
       break; 
     }
@@ -745,7 +907,7 @@ int sd_read_init() {
     sleep_ms(DISPLAY_DELAY_SHORT);
 
     if (! f_gets(BANK_PROG[3], sizeof(BANK_PROG[3]), &fil)) {
-      show_error(0,0,"INI - PROG 4");
+      show_error_and_halt(0,0,"INI - PROG 4");
       skip = true; 
       break; 
     }
@@ -775,7 +937,7 @@ int sd_read_init() {
   // Close file
   fr = f_close(&fil);
   if (fr != FR_OK) {
-    show_error(0,0,"INI - CLOSE");
+    show_error_and_halt(0,0,"INI - CLOSE");
   }
 
   // Unmount drive
@@ -1373,6 +1535,148 @@ void pgm2() {
 //
 //
 
+void save_buttons_config_file(void) { 
+  print_string(0,0,"Saving");
+
+  strcpy(file,"ADC.INI"); 
+
+  FRESULT fr;
+  FATFS fs;
+  FIL fil;
+  int ret;
+  char buf[100];
+  char const *p_dir;
+
+  p_dir = init_and_mount_sd_card(); 
+
+  //
+  //
+  //
+
+  // Open file for writing ()
+  fr = f_open(&fil, file, FA_WRITE | FA_CREATE_ALWAYS);
+  if (fr != FR_OK) {
+    show_error("WRITE ERROR 1");
+    f_close(&fil);
+    return; 
+  }
+
+  //
+  //
+  //
+  
+  ret = f_printf(&fil, "%s", MACHINE);
+  if (ret < 0) {
+    show_error("WRITE ERROR 1");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%02X", CANCEL_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 2");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%02X", CANCEL2_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 3");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%02X", OK_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 4");
+    f_close(&fil);
+    return; 
+  }
+  
+  ret = f_printf(&fil, "\n%02X", BACK_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 4");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%02X", DOWN_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 5");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%02X", UP_ADC);
+  if (ret < 0) {
+    show_error("WRITE ERROR 6");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%s", BANK_PROG[0]); 
+  if (ret < 0) {
+    show_error("WRITE ERROR 7");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%s", BANK_PROG[1]); 
+  if (ret < 0) {
+    show_error("WRITE ERROR 8");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%s", BANK_PROG[2]); 
+  if (ret < 0) {
+    show_error("WRITE ERROR 9");
+    f_close(&fil);
+    return; 
+  }
+
+  ret = f_printf(&fil, "\n%s", BANK_PROG[3]); 
+  if (ret < 0) {
+    show_error("WRITE ERROR 10");
+    f_close(&fil);
+    return; 
+  }
+
+  // debug adc: 
+  ret = f_printf(&fil, "\n%d", 0); 
+  if (ret < 0) {
+    show_error("WRITE ERROR 11");
+    f_close(&fil);
+    return; 
+  }
+
+  //
+  //
+  //
+  
+  fr = f_close(&fil);
+  if (fr != FR_OK) {
+    show_error_wait_for_button("CANT'T CLOSE FILE");
+    clear_screen(); 
+  } else {
+    strcpy(BANK_PROG[cur_bank], file);
+    print_string(0,3, "Saved: %s", file);
+    sleep_ms(DISPLAY_DELAY);
+    sleep_ms(DISPLAY_DELAY);
+  }
+
+  //
+  //
+  //
+  
+  return;
+
+}
+
+///
+///
+///
+
 int center_string(char* string) {
   int n = strlen(string);
   int l = 8 - (n / 2);
@@ -1453,10 +1757,7 @@ int main() {
   //
 
   ssd1306_setup();
-  show_logo(); 
-  sleep_ms(DISPLAY_DELAY_LONG); 
-  sleep_ms(DISPLAY_DELAY_LONG); 
-
+  
   //
   //
   //
@@ -1471,14 +1772,6 @@ int main() {
   //
   //
   
-  sd_read_init();
-  load_init_progs();
-  show_info(); 
-  //sd_test(); 
-
-  //
-  //
-  //
 
   for (gpio = ADR_INPUTS_START; gpio < DATA_GPIO_START; gpio++) {
     addr_mask |= (1 << gpio);
@@ -1519,6 +1812,37 @@ int main() {
   //
   //
   //
+
+  if ( some_button_pressed() ) {
+
+    wait_for_button_release_raw(); 
+    // do button tuning
+    TUNE_ADC = true;    
+    multicore_launch_core1(display_loop);
+    
+    while (true) {
+      __asm volatile (" nop\n ");
+    }
+
+  }
+
+  //
+  //
+  //
+
+  sd_read_init();
+  load_init_progs();
+
+  show_logo();   
+  sleep_ms(DISPLAY_DELAY_LONG); 
+  sleep_ms(DISPLAY_DELAY_LONG); 
+
+  show_info(); 
+
+  //
+  //
+  // 
+
 
   m_adr = 0;
   r_op = 0;
