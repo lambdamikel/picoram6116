@@ -68,14 +68,15 @@ the CPU and expect it to run properly.
 So, this problem was fixed by adjusting the ADC threshold levels in
 the `6116.INI` file. However, I didn't like that the spurious button
 presses weren't reported and happened "silently", leaving me unaware
-of what was happening. In the corresponding `case-switch` in the UI
-loop, there was no `switch case` for this case, and a `default` clause
-was missing as well. I have now added a `default` clause, and it will
-show an error message on the display informing the user that the ADC
-button threshold levels in the init file are inadequate and may case
-SRAM emulation glitches.
+of what was happening. In the UI loop code, there was no `switch case`
+that caught this case, and a `default` clause was missing as well. I
+have now added such a `default` clause. It will show an error message
+on the display informing the user about inadequate ADC button
+threshold levels in the init file that may cause SRAM emulation
+glitches.
 
-Please install the [new firmware (Version 1.2).](firmware/sram6116_v1.2.uf2)
+**Please install the [new firmware (Version
+1.2).](firmware/sram6116_v1.2.uf2)**
 
 ## Older News
 
