@@ -161,7 +161,7 @@ for your machine (MPF-1B or MPF-1P). Unzip everything to the root
 directory; sub-directories are not supported. See [this
 directory.](software/)
 
-PicoRAM 6116 is usally powered over the 6116 SRAM socket. Make sure
+PicoRAM 6116 is usually powered over the 6116 SRAM socket. Make sure
 that the **POWER** button is pushed down, and that the **SEL VCC**
 (Power Source) is set to **6116 VCC**. External power supply is
 possible as well, using the 5V Center Positive Barrel Jack. However,
@@ -273,10 +273,10 @@ See [here.](src/)
 
 ## Acknowledgements
 
-- Harry Fairhead for his [execellent
+- Harry Fairhead for his [excellent
   book!](https://www.amazon.com/gp/product/1871962056)
 
-- Hans Hübner (aka Pengo) for motivating me to abandon the BluePill,
+- Hans HÃ¼bner (aka Pengo) for motivating me to abandon the BluePill,
 ATmegas and Arduinos, and for helping to get started and
 troubleshooting!
 
